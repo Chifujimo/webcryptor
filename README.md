@@ -21,24 +21,37 @@ This is a light weight browser extension that transforms any text to an encrypte
 - CSS3
 - Vanilla JavaScript
 
-## Getting Started
 
-## Getting Started
+## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Chifujimo/webcryptor.git
+(If downloaded from the releases, extract the zipped file and continue from step 2)
 
-2. Open your browser's extension manager:
-   Chrome: chrome://extensions
-   Edge: edge://extensions
-   Opera: opera://extensions
-   Firefox: about:debugging
+1. Clone the repository
 
-3. Enable Developer Mode (toggle switch in top-right corner for Chrome/Edge/Opera)
+```bash
+git clone https://github.com/Chifujimo/webcryptor.git
+```
+2. Open your browser
 
-4. Load the extension:
-   Chrome/Edge/Opera: Click "Load unpacked" and select the folder
-   Firefox: Click "Load Temporary Add-on" and select manifest.json
+### Chrome / Edge / Opera
 
-5. You can now open and use the browser extension like any other
+3. Navigate to the extension panel via:
+```bash
+Chrome: chrome://extensions
+Edge: edge://extensions
+Opera: opera://extensions
+```
+4. Enable developer mode
+5. Upload the extension by pressing "Load unpacked extension"
+6. Select the directory where you cloned the repository
+7. The extension is now uploaded successfully and can be used like any other extension
+
+### Firefox
+
+3. Navigate to the extension panel via:
+```bash
+about:debugging
+```
+4. Click on "This Firefox"
+5. Click "Load temporary add-on"
+6. Select manifest.json
