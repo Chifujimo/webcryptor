@@ -55,3 +55,4 @@ about:debugging
 4. Click on "This Firefox"
 5. Click "Load temporary add-on"
 6. Select manifest.json
+7. The extension is now uploaded successfully and can be used like any other extension
