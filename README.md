@@ -23,9 +23,11 @@ This is a light weight browser extension that transforms any text to an encrypte
 
 ## Getting Started
 
+## Getting Started
+
 1. Clone the repository:
+   ```bash
    git clone https://github.com/Chifujimo/webcryptor.git
-   Or download and extract the ZIP file
 
 2. Open your browser's extension manager:
    Chrome: chrome://extensions
