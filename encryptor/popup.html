@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 450px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    h2 {
+      margin: 0 0 5px 0;
+      color: #2c3e50;
+      font-size: 20px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 8px;
+    }
+    label {
+      font-weight: 600;
+      color: #34495e;
+      font-size: 14px;
+      margin-bottom: -5px;
+    }
+    textarea, input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-family: inherit;
+      transition: border 0.3s;
+    }
+    textarea:focus, input:focus {
+      outline: none;
+      border-color: #3498db;
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    }
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    .output-section {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      margin-top: 10px;
+    }
+    .output-item {
+      margin: 10px 0;
+      padding: 8px;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+      word-break: break-all;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+    }
+    .output-label {
+      font-weight: 600;
+      color: #2c3e50;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .success-message {
+      color: #27ae60;
+      font-weight: 600;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .header-icon {
+      font-size: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>
+      <span class="header-icon"></span> 
+      Simple AES Encryptor
+    </h2>
+    
+    <label for="plainText">Enter text to encrypt:</label>
+    <textarea id="plainText" placeholder="Type your secret message here..."></textarea>
+    
+    <label for="filename">Filename (optional):</label>
+    <input type="text" id="filename" placeholder="encrypted">
+    
+    <button id="encryptBtn">Encrypt and Download</button>
+    
+    <div id="result" class="output-section" style="display: none;">
+      <h3 style="margin:0 0 15px 0; color:#2c3e50;">Encryption Details:</h3>
+      
+      <div class="output-item">
+        <span class="output-label">Key (Base64):</span>
+        <span id="keyOutput"></span>
+      </div>
+      
+      <div class="output-item">
+        <span class="output-label">IV (Base64):</span>
+        <span id="ivOutput"></span>
+      </div>
+      
+      <div class="output-item">
+        <span class="output-label">Encrypted Data (Base64):</span>
+        <span id="dataOutput"></span>
+      </div>
+      
+      <div class="success-message" id="successMessage"></div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
