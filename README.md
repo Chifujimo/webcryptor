@@ -9,13 +9,13 @@ This is a light weight browser extension that transforms any text to an encrypte
 - Save to file
 - Open source code
 
-## Screenshots
+## Preview
 
 | Encryption | Decryption |
 |------------|------------|
 | ![AES Encryptor](images/Simple%20AES%20Encryptor.png) | ![AES Decryptor](images/Simple%20AES%20Decryptor.png) |
 
-## Tech Stack
+## Used programming languages
 
 - HTML5
 - CSS3
