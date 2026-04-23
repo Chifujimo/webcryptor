@@ -58,3 +58,11 @@ about:debugging
 5. Click "Load temporary add-on"
 6. Select manifest.json
 7. The extension is now uploaded successfully and can be used like any other extension
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## About me
+
+I am a 16 year old student that is trying to learn C# but for now i have to use AI to help me.
