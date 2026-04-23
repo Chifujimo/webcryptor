@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A11XB66C)
+
 # Webcryptor
 
 This is a light weight browser extension that transforms any text to an encrypted string using AES-256.
